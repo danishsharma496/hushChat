@@ -1,2 +1,15 @@
-.env
+# .gitignore
+
+# Node.js dependencies
 node_modules/
+
+# Environment variables
+.env
+
+# Generated files
+index.html
+loader.gif
+style.css
+script.js
+
+ 

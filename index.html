@@ -77,7 +77,7 @@
 </head>
 <body>
   <div id="chat-container">
-  <h1>Coding Money Chatbot</h1>
+  <h1>HUSHH AI </h1>
   <div id="chat-history"></div>
   <form id="chat-form">
     <input type="text" id="user-input" placeholder="Enter your message">
@@ -105,17 +105,40 @@
           body: JSON.stringify({ userInput: userMessage }),
         });
 
+
+        // product call 
+        // const item = await fetch('/product' , {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //   },
+        //   body: JSON.stringify({ userInput: "nike Airforce"}),
+        // });
+        // if (item.ok) {
+        
+        //   const result = await item.json();
+        //   console.log(result);
+        // }
+
+
+        
         const data = await response.json();
         console.log(data)
+      
+
+        // producy call over here 
+
         const botMessage = data.response;
+
         console.log(botMessage)
         // Add chat message to the chat history
         chatHistory.innerHTML += `<div class="user-message">${userMessage}</div>`;
         chatHistory.innerHTML += `<div class="bot-message">${botMessage}</div>`;
-
+        
         // Scroll to the bottom of the chat history
         chatHistory.scrollTop = chatHistory.scrollHeight;
       } catch (error) {
+        console.log(data)
         console.error('Error:', error);
         // Handle errors gracefully, e.g., display an error message to the user
       }
