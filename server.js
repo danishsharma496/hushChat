@@ -94,7 +94,7 @@ async function searchAmazonData(query) {
       // max_price: maxPrice.toString()
     },
     headers: {
-      'X-RapidAPI-Key': '188fbcb24dmsha2a0ae5a1906c8ep1ca78fjsnb2f852efc33f',
+      'X-RapidAPI-Key': RAPIDAPI_KEY,
       'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com'
     }
   };
